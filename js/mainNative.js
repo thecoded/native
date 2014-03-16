@@ -20,7 +20,7 @@ function activeButs(){
 
 	$('.footItem').on('click', function(){
 		ind = $(this).index();
-		carousel.showPane(ind);
+		carousel.showPane(ind, 500);
 		$('.footItem').removeClass('activeElem');
 		$(this).addClass('activeElem');
 	
