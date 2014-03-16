@@ -32,7 +32,7 @@ function scrollEm(){
 	setTimeout(function(){
 
 		myScroll = new IScroll('#carousel .pane2', {
-useTransform: true,
+/*useTransform: true,
 zoom: false,
 onBeforeScrollStart: function (e) {
 var target = e.target;
@@ -40,7 +40,9 @@ while (target.nodeType != 1) target = target.parentNode;
 
 if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
 e.preventDefault();
-}
+}*/
+
+click: true
 });
 	}, 1000)
 	
