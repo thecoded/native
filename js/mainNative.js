@@ -31,19 +31,21 @@ function activeButs(){
 function scrollEm(){
 	setTimeout(function(){
 
-		myScroll = new IScroll('#carousel .pane2', {
-/*useTransform: true,
-zoom: false,
-onBeforeScrollStart: function (e) {
-var target = e.target;
-while (target.nodeType != 1) target = target.parentNode;
-
-if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
-e.preventDefault();
-}*/
-
-click: true
-});
+		myScroll = new IScroll('#carousel .pane1', {
+			click: true
+		});
+		myScroll2 = new IScroll('#carousel .pane2', {
+			click: true
+		});
+		myScroll3 = new IScroll('#carousel .pane3', {
+			click: true
+		});
+		myScroll4 = new IScroll('#carousel .pane4', {
+			click: true
+		});
+		myScroll5 = new IScroll('#carousel .pane5', {
+			click: true
+		});
 	}, 1000)
 	
 }
